@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>index.html</title>
+<meta charset="utf-8">
+<link href="css/site.css" rel="stylesheet" type="text/css">
+<link href="css/menu.css" rel="stylesheet" type="text/css">
+<link href="css/fig.css" rel="stylesheet" type="text/css">
+<link href="css/btn1.css" rel="stylesheet" type="text/css">
+<style>
+    main{
+        background-color: #54678F;
+    }
+    .ggg{
+        margin:auto;
+        background-color: #9199BE;
+        text-align: center;
+    }
+    .slider_container {
+  margin: 30px;
+  width: 400px;
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  border: 10px solid;
+  border-top-color: #16235A;
+  border-left-color: #A4A4BF;
+  border-bottom-color: #16235A;
+  border-right-color: #A4A4BF;
+  background-color: #2A3457;
+  box-shadow: 15px 15px 10px; 
+}
+.slider_container:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  width: 100%;
+  height: 100%;
+  background-image: url(img/2222.jpg);
+  animation: bk 12s linear;
+}
+.slider_container div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  left: 100%;
+  width: 100%;
+  -webkit-animation: round 12s linear infinite;
+  animation: round 12s linear infinite;
+}
+.slider_container div img {
+  width: 100%;
+}
+@-webkit-keyframes round {
+  4% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 0;
+  }
+  16% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 0;
+  }
+  20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: -100%;
+  }
+  22% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: -100%;
+  } 
+  24% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: 100%;
+  } 
+}
+@keyframes bk {
+  0% {
+    left: 0;
+  }
+  4% {
+    left: -100%;
+  }   
+}
+
+@keyframes bk {
+  0% {
+    left: 0;
+  }
+  4% {
+    left: -100%;
+  }  
+}
+.slider_container div:nth-child(5) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.slider_container div:nth-child(4) {
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.slider_container div:nth-child(3) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+.slider_container div:nth-child(2) {
+  -webkit-animation-delay: 9s;
+  animation-delay: 9s;
+}
+.slider_container div:nth-child(1) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.rwd_slider_container_wrapper {
+  margin: 30px auto !important;
+  width: 420px;
+}
+.rwd_slider_container {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 70%;
+  box-sizing: border-box;
+}
+.rwd_slider_container .slider_container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div id="all">
+    <header id="header">
+        <div class="logo"><img src="img/0123.jpg" width="720" height="400"></div>
+    </header>
+    <div id="menu-wrapper">
+        <ul class="menu">
+            <li><a href="index.html">首頁</a>
+                   </li>
+            <li><a href="tn.html">個人介紹</a>
+                <ul>
+                    <li><a href="tn-1.html">基本介紹</a></li>
+                    <li><a href="tn2.html">長毛吉☞</a>
+                     <ul>
+                            <li><a href="tn12.html">ⓞⓝⓔ</a></li>
+                            <li><a href="tn-3.html">Ⓣⓦⓞ</a></li>
+                            <li><a href="tn-4.html">Ⓣⓗ⒭ⓔⓔ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="tn3.html">短毛吉☞</a>
+                        <ul>
+                            <li><a href="#">ⓞⓝⓔ</a></li>
+                            <li><a href="#">Ⓣⓦⓞ</a></li>
+                            <li><a href="#">Ⓣⓗ⒭ⓔⓔ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            <li><a href="ph.html">關於我們</a>
+                <ul>
+                    <li><a href="#">理念</a></li>
+                    <li><a href="#">活動籌劃</a></li>
+                    <li><a href="#">地點</a></li>
+                </ul>
+            </li>
+            <li><a href="ph-1.html">更多</a>
+                <ul>
+                    <li><a href="#">圖片</a></li>
+                    <li><a href="#">資訊</a></li>
+                    <li><a href="#">內容</a></li>
+                </ul>
+            </li>
+         </ul>
+    </div>
+    <div id="wrapper">
+        <aside id="aside">
+            <button class="btn1">最新消息</button>
+            <button class="btn1">檔案下載</button>
+            <button class="btn1">留言板</button>
+            <button class="btn1">活動相簿</button>
+        </aside>
+        <main>
+            <div id="fig-wrapper">
+                <div class="sec">
+                <p class="title">∪･ω･∪精選集</p>
+                <div class="slider_container">
+	               <div>
+		              <img src="img/02.jpeg" alt="pure css3 slider" />
+	               </div>
+	               <div>
+                      <img src="img/03.jpeg" alt="pure css3 slider" />
+	               </div>
+	               <div>
+		              <img src="img/08.jpg" alt="pure css3 slider" />
+	               </div>
+	               <div>
+		              <img src="img/05.jpeg" alt="pure css3 slider" />
+	               </div>
+	               <div>
+		              <img src="img/06.jpeg" alt="pure css3 slider" />
+	               </div>
+                </div><br>
+                <div>
+                <h3>➸領養資訊</h3>
+                    <li><a href="http://www.twgiwawa.com/"style="color:#FF4081">吉娃娃犬舍</a></li>
+                    <li><a href="https://zh.wikipedia.org/wiki/%E5%90%89%E5%A8%83%E5%A8%83"style="color:#FF4081">吉娃娃百科</a></li>
+                    <li><a href="https://zh-tw.facebook.com/groups/108371472870703/" style="color:#FF4081">吉娃娃協會</a></li>
+                </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="ggg">
+     <button type="button" onclick="document.getElementById('js1').innerHTML =Date()">Time</button>
+        <p id="js1">按按鈕顯示時間✌</p>
+    </div>
+    <footer id="footer">Phone number☎:0912345678</footer>
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.btn1{
+    display:flow-root;
+    width:120px;
+    padding: 5px 0;
+    margin:5px;
+    font-size: 18px;
+    font-family:fantasy;
+    background-color: #455A64;
+    color:whitesmoke;
+    border-radius: 10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.btn1:hover{
+    background-image: url(../img/07.jpeg);
+    background-size: cover;
+    color:#FFFF8D;
+    cursor: pointer;
+}
